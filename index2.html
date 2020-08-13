@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminKH Ktar | ประวัติการศึกษา</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mitr:wght@300&family=Permanent+Marker&family=Prompt:wght@200;300&family=Staatliches&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="css/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="css/overlayScrollbars/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar- navbar-light" style="background-color: rgb(185, 68, 39);" >
+      <!-- Left navbar links -->
+      <ul class="navbar-nav" >
+        <li class="nav-item" >
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars" style="color: rgb(43, 43, 43);"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="home.html" class="nav-link" style="color: rgb(43, 43, 43);"><b>Home</b></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link" style="color: rgb(43, 43, 43);"><b>Contact</b></a>
+        </li>
+      </ul>
+  
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+  
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto" >
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown" >
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments" style="color: rgb(43, 43, 43);"></i>
+          </a>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell" style="color: rgb(43, 43, 43);"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt" style="color: rgb(43, 43, 43);"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+ <!-- Main Sidebar Container -->
+ <aside class="main-sidebar sidebar-dark-warning elevation-4">
+  <!-- Brand Logo -->
+  <a href="home.html" class="brand-link" style="font-family: 'Staatliches', cursive;">
+    <img src="image/12326.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light">AdminKH Ktar</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="image/S__16719875.jpg" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info" style="font-family: 'Staatliches', cursive;">
+        <a href="index.html" class="d-block">Siripim  Mordu</a>
+      </div>
+    </div>
+
+    <!-- SidebarSearch Form -->
+    <div class="form-inline" >
+      <div class="input-group" data-widget="sidebar-search">
+        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-sidebar">
+            <i class="fas fa-search fa-fw"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2" style="font-family: 'Mitr', sans-serif;">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item menu-open">
+          <a href="#" class="nav-link active">
+            <i class="fas fa-users"></i>
+            <p>
+              ข้อมูลส่วนตัว
+              <i class="right fas fa-angle-left"></i>
+            </p>
+            
+          </a>
+
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link active">
+                <i class="fas fa-user-astronaut"></i>
+                <p>ประวัติส่วนตัว</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="./index2.html" class="nav-link">
+            <i class="fas fa-book-open"></i>
+            <p>ประวัติการศึกษา</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="simple.html" class="nav-link">
+            <i class="fas fa-desktop"></i>
+            <p>ความสามารถ</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Monthly.html" class="nav-link">
+            <i class="fas fa-money-bill-wave"></i>
+            <p>ข้อมูลการเงิน</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            <i class="fas fa-store-alt"></i>
+            <p>
+              ช่องทางการติดต่อ
+              <span class="right badge badge-danger">New</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-image: url(image/background-2535510_1920.jpg);">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style="font-family: 'Mitr', sans-serif;">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6" >
+            <h1 style="font-size: 40px;"><b>ประวัติการศึกษา</b></h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item" style="color: rgb(35, 108, 245);"><i class="fas fa-home" ><a href="home.html" style="font-family: 'Staatliches', cursive; font-size: 20px;" ><u style="color: rgb(35, 108, 245);"> Home</u></a></i></li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content" style="font-family: 'Mitr', sans-serif;">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box" >
+              <span class="info-box-icon elevation-1 " style="background-color: #7a239c;"><img class="img-circle img-bordered-sm"  src="image/1046-1.jpg" alt="User Image"></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">ระดับชั้นอนุบาล</span>
+                <span class="info-box-number">
+                  โรงเรียนสาธิตมหาวิทยาลัยราชภัฏเชียงใหม่
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon elevation-1 " style="background-color: #7a239c;"><img class="img-circle img-bordered-sm"  src="image/1046-1.jpg" alt="User Image"></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">ระดับชั้นประถมศึกษา</span>
+                <span class="info-box-number">
+                  โรงเรียนสาธิตมหาวิทยาลัยราชภัฏเชียงใหม่
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon elevation-1 " style="background-color: #d4075c;"><img class="img-circle img-bordered-sm"  src="image/1046-2.jpg" alt="User Image"></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">ระดับชั้นมัธยมศึกษา</span>
+                <span class="info-box-number">
+                  โรงเรียนยุพราชวิทยาลัย เชียงใหม่
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon elevation-1 " style="background-color: #0a6307;"><img class="img-circle img-bordered-sm"  src="image/mju_logo.jpg" alt="User Image"></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">ระดับชั้นอุดมศึกษา</span>
+                <span class="info-box-number">
+                  ปริญญาตรี มหาวิทยาลัยแม่โจ้ เชียงใหม่
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="content">
+          <div class="container-fluid">
+              <!--กราฟเส้น/แท่ง gpa ทุกเทอม-->
+              <!-- BAR CHART -->
+              <div class="card card-warning">
+                  <div class="card-header">
+                      <h3 class="card-title" style="font-size: 25px;">กราฟ GPA ผลการเรียนปัจจุบัน</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="chart">
+                          <canvas id="barChart"
+                              style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                      </div>
+                  </div>
+          
+                  <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <!-- /.row -->
+          </div>
+      </div>
+             
+          <h1 style="font-size:40px;"><b>ผลการศึกษา</b></h1>   
+                     
+          <!-- ปี 1 เทอม 1 -->
+          <div class="card 1/1">
+              <div class="card-header border-transparent">
+                <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 1/2561</h3> 
+          </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table m-0">
+                    <thead>
+                    <tr>
+                      <th>รหัสวิชา</th>
+                      <th>ชื่อรายวิชา</th>
+                      <th>หน่วยกิต</th>
+                      <th>เกรด</th>
+                    </tr>
+                    </thead>
+                  <tbody>
+                    <tr>
+                      <td>50375</a></td>
+                      <td>มาตรฐานด้าน Information and Communication Technology ( T )</td>
+                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">0</div>
+                      </td>
+                      <td><span class="badge badge-success"> S </span></td> 
+                    </tr>
+
+                    <tr>
+                      <td>คพ111</a></td>
+                      <td>วิทยาการคอมพิวเตอร์ 1</td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                      </td>
+                      <td><span class="badge badge-warning"> D+ </span></td>
+                    </tr>
+
+                    <tr>
+                      <td>คพ117</a></td>
+                      <td>หลักการเขียนโปรแกรมเชิงวัตถุ</td>
+                      <td>
+                        <div class="sparkbar" data-color="#f56954" data-height="20">3</div>
+                      </td>
+                      <td><span class="badge badge-warning"> D+ </span></td>
+                    </tr>
+
+                     <tr>
+                      <td>ผษ101</a></td>
+                      <td>เกษตรเพื่อชีวิต</td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                      </td>
+                      <td><span class="badge badge-warning">  A  </span></td>
+                    </tr>
+
+                     <tr>
+                      <td>ศท021</a></td>
+                      <td>สังคมศาสตร์ในชีวิตประจำวัน</td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                      </td>
+                      <td><span class="badge badge-warning"> C+ </span></td>
+                    </tr>
+
+                    <tr>
+                      <td>ศท031</a></td>
+                      <td>การใช้ภาษาไทย</td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                      </td>
+                      <td><span class="badge badge-warning"> B </span></td>
+                    </tr>
+
+                    <tr>
+                      <td>ศท141</a></td>
+                      <td>ภาษาอังกฤษพื้นฐาน 1</td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                      </td>
+                      <td><span class="badge badge-warning"> D+ </span></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.table-responsive -->
+              </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-cyan progress-bar-striped" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <span class="sr-only">100% Complete (warning)</span>
+            </div>
+          </div>
+          <br/>
+
+          <!-- ปี 1 เทอม 2 -->
+          <div class="card 1/2">
+            <div class="card-header border-transparent">
+              <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 2/2561</h3> 
+        </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อรายวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เกรด</th>
+                  </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>คพ112</a></td>
+                    <td>วิทยาการคอมพิวเตอร์ 2</td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D+ </span></td> 
+                  </tr>
+
+                  <tr>
+                    <td>คพ121</a></td>
+                    <td>ตรรกศาสตร์เชิงดิจิทัลและอุปกรณ์อัจฉริยะ</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>คพ151</a></td>
+                    <td>คณิตศาสตร์ดีสครีต</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>ชว100</a></td>
+                    <td>ชีววิทยาทั่วไป</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning">  D  </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>ศท104</a></td>
+                    <td>มนุษย์และสิ่งแวดล้อม</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C+ </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>ศท142</a></td>
+                    <td>ภาษาอังกฤษพื้นฐาน 2</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D+ </span></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-cyan progress-bar-striped" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <span class="sr-only">100% Complete (warning)</span>
+            </div>
+          </div>
+          <br/>
+
+          <!-- ปี 1 เทอม 3 -->
+          <div class="card 1/3">
+            <div class="card-header border-transparent">
+              <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 3/2561</h3> 
+          </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อรายวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เกรด</th>
+                  </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>พท310</a></td>
+                    <td>กฎหมายและองค์กรสิ่งแวดล้อม</td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> A </span></td> 
+                  </tr>
+
+                  <tr>
+                    <td>พส471</a></td>
+                    <td>พืชน้ำหอม</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> A </span></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-cyan progress-bar-striped" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <span class="sr-only">100% Complete (warning)</span>
+            </div>
+          </div>
+          <br/>
+
+          <!-- ปี 2 เทอม 1 -->
+          <div class="card 2/1">
+            <div class="card-header border-transparent">
+              <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 1/2562</h3> 
+        </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อรายวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เกรด</th>
+                  </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>คพ213</a></td>
+                    <td>การวิเคราะห์และออกแบบอัลกอริทึม</td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D+ </span></td> 
+                  </tr>
+
+                  <tr>
+                    <td>คพ221</a></td>
+                    <td>โครงสร้างข้อมูล</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>คพ231</a></td>
+                    <td>ระบบคอมพิวเตอร์และภาษาแอสเซมบลี</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">1</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>คพ241</a></td>
+                    <td>ระบบฐานข้อมูล</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning">  C  </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>คศ101</a></td>
+                    <td>แคลคูลัส 1</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D+ </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>วท102</a></td>
+                    <td>การพัฒนาวิทยาศาสตร์และเทคโนโลยี</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C+ </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>ศท241</a></td>
+                    <td>ภาษาอังกฤษเชิงวิทยาศาสตร์และเทคโนโลยี 1</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> B </span></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-cyan progress-bar-striped" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <span class="sr-only">100% Complete (warning)</span>
+            </div>
+          </div>
+          <br/>
+
+           <!-- ปี 2 เทอม 2 -->
+          <div class="card 2/2">
+            <div class="card-header border-transparent">
+              <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 2/2562</h3> 
+        </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อรายวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เกรด</th>
+                  </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>คพ222</a></td>
+                    <td>การเขียนโปรแกรมมัลติมีเดีย</td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D+ </span></td> 
+                  </tr>
+
+                  <tr>
+                    <td>คพ232</a></td>
+                    <td>สถาปัตยกรรมคอมพิวเตอร์</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> B </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>คพ252</a></td>
+                    <td>คณิตศาสตร์สำหรับวิทยาการคอมพิวเตอร์</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C+ </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>ศท242</a></td>
+                    <td>ภาษาอังกฤษเชิงวิทยาศาสตร์และเทคโนโลยี 2</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning">  C  </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>ศท305</a></td>
+                    <td>ประวัติศาสตร์และพัฒนาการของล้านนา</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> C+ </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>สต301</a></td>
+                    <td>หลักสถิติ</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> D </span></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-cyan progress-bar-striped" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <span class="sr-only">100% Complete (warning)</span>
+            </div>
+          </div>
+          <br/>
+
+          <!-- ปี 2 เทอม 3 -->
+          <div class="card 2/3">
+          <div class="card-header border-transparent">
+            <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 3/2562</h3> 
+      </div>
+          <!-- /.card-header -->
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table m-0">
+                <thead>
+                <tr>
+                  <th>รหัสวิชา</th>
+                  <th>ชื่อรายวิชา</th>
+                  <th>หน่วยกิต</th>
+                  <th>เกรด</th>
+                </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td>จป413</a></td>
+                  <td>การประกวดและตัดสินสัตว์น้ำ</td>
+                  <td>
+                    <div class="sparkbar" data-color="#00a65a" data-height="20">3</div>
+                  </td>
+                  <td><span class="badge badge-warning"> A </span></td> 
+                </tr>
+
+                <tr>
+                  <td>พท437</a></td>
+                  <td>มัคคุเทศก์ทางการเดินป่า</td>
+                  <td>
+                    <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                  </td>
+                  <td><span class="badge badge-warning"> A </span></td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          </div>
+          <!-- /.card -->
+
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-cyan progress-bar-striped" role="progressbar"
+                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              <span class="sr-only">100% Complete (warning)</span>
+            </div>
+          </div>
+          <br/>
+
+          <!-- ปี 3 เทอม 1 -->
+          <div class="card 3/1">
+            <div class="card-header border-transparent">
+              <h3 class="card-title" style="font-size: 25px;">ภาคการศึกษาที่ 1/2563</h3> 
+        </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>รหัสวิชา</th>
+                    <th>ชื่อรายวิชา</th>
+                    <th>หน่วยกิต</th>
+                    <th>เกรด</th>
+                  </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>คพ313</a></td>
+                    <td>การพัฒนาโปรแกรมประยุกต์บนเว็บ</td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> - </span></td> 
+                  </tr>
+
+                  <tr>
+                    <td>คพ320</a></td>
+                    <td>ระบบปฏิบัติการ</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> - </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>คพ341</a></td>
+                    <td>วิทยาการข้อมูล</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> - </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>คพ343</a></td>
+                    <td>การวิเคราะห์และออกแบบเชิงวัตถุ</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning">  -  </span></td>
+                  </tr>
+
+                   <tr>
+                    <td>คพ452</a></td>
+                    <td>ปัญญาประดิษฐ์</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> - </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>ศท013</a></td>
+                    <td>สุขภาพเพื่อการดำรงชีวิต</td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">3</div>
+                    </td>
+                    <td><span class="badge badge-warning"> - </span></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          </div>
+          <!-- /.card -->
+
+          
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer" style="background-color: rgb(185, 68, 39); color: #ffc31f;">
+    <div class="float-right d-none d-sm-block"  style="font-family: 'Mitr', sans-serif;">
+      <b>Version</b> 3.1.0-pre
+    </div>
+    <strong style="font-family: 'Mitr', sans-serif;">Copyright &copy; 2014-2020 <a href="https://adminlte.io" style="color: lightseagreen;"><lead style="font-family: 'Mitr', sans-serif;">AdminKH Ktar.</lead></a></strong><lead style="font-family: 'Mitr', sans-serif;"> All rights reserved.</lead>
+  </footer>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+ 
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="js/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="js/overlayScrollbars/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/adminlte.min.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="js/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="js/raphael/raphael.min.js"></script>
+<script src="js/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="js/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="js/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="js/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/dashboard2.js"></script>
+
+<script>
+  $(function () {
+  /* ChartJS
+   * -------
+   * Here we will create a few charts using ChartJS
+   */
+  
+  var areaChartData = {
+      labels: ['ภาคเรียนที่ 1/2561','ภาคเรียนที่ 2/2561','ภาคเรียนที่ 3/2561','ภาคเรียนที่ 1/2562','ภาคเรียนที่ 2/2562','ภาคเรียนที่ 3/2562','ภาคเรียนที่ 1/2563','GPA รวม'],
+      datasets: [
+          {
+              label: 'GPA',
+              backgroundColor: 'rgba(86, 200, 221, 1)',
+              borderColor: 'rgba(60,141,188,0.8)',
+              pointRadius: false,
+              pointColor: '#3b8bba',
+              pointStrokeColor: 'rgba(60,141,188,1)',
+              pointHighlightFill: '#fff',
+              pointHighlightStroke: 'rgba(60,141,188,1)',
+              data: [2.33, 1.75, 4.00, 2.02, 2.08, 4.00, 0.00, 2.32]
+          },
+          
+      ]
+  }
+  
+  //-------------
+  //- BAR CHART -
+  //-------------
+  var barChartCanvas = $('#barChart').get(0).getContext('2d')
+  var barChartData = $.extend(true, {}, areaChartData)
+  var temp0 = areaChartData.datasets[0]
+  //var temp1 = areaChartData.datasets[1]
+  barChartData.datasets[0] = temp0
+  //barChartData.datasets[1] = temp0
+  
+  var barChartOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      datasetFill: false
+  }
+  
+  var barChart = new Chart(barChartCanvas, {
+      type: 'bar',
+      data: barChartData,
+      options: barChartOptions
+  })
+  
+  //---------------------
+  //- STACKED BAR CHART -
+  //---------------------
+  var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+  var stackedBarChartData = $.extend(true, {}, barChartData)
+  
+  var stackedBarChartOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+          xAxes: [{
+              stacked: true,
+          }],
+          yAxes: [{
+              stacked: true
+          }]
+      }
+  }
+  
+  var stackedBarChart = new Chart(stackedBarChartCanvas, {
+      type: 'bar',
+      data: stackedBarChartData,
+      options: stackedBarChartOptions
+  })
+  })
+  </script>
+</body>
+</html>
